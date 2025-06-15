@@ -1,20 +1,17 @@
 {
   "name": "quittme",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "workspaces":["apps/*","packages/*"],
   "scripts": {
-    "dev":"turbo run dev",
-    "build":"turbo run build",
-    "start":"turbo run start"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently -k -n BACKEND,FRONTEND -c green,blue \"pnpm --filter backend start:dev\" \"pnpm --filter frontend dev\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "packageManager": "pnpm@10.12.1",
   "devDependencies": {
-    "turbo": "^2.5.4",
-    "typescript": "^5.8.3"
-  },
-  "packageManager":"npm@10.9.2"
+    "concurrently": "^9.1.2"
+  }
 }
