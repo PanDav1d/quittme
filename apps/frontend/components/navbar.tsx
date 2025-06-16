@@ -20,13 +20,14 @@ export function Navbar() {
   return (
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between px-4">
-        {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2">
-          <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-            <Receipt className="h-4 w-4 text-primary-foreground" />
-          </div>
-          <span className="font-bold text-xl">QuittMe</span>
-        </Link>
+      {/* Logo */}
+      <Link href="/" className="flex items-center">
+        <img
+        src="/logo.svg"
+        alt="QuittMe Logo"
+        className="h-8 w-auto"
+        />
+      </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6">

@@ -63,12 +63,11 @@ export function Footer() {
           {/* Brand Section */}
           <div className="lg:col-span-2 animate-slide-in-up">
             <div className="flex items-center space-x-2 mb-4 group">
-              <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
-                <Receipt className="h-4 w-4 text-primary-foreground" />
-              </div>
-              <span className="font-bold text-xl group-hover:text-green-600 transition-colors duration-300">
-                QuittMe
-              </span>
+              <img
+              src="/logo.svg"
+              alt="QuittMe Logo"
+              className="rounded-lg flex items-center justify-center p-5"
+              />
             </div>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Der intelligente Weg, Quittungen zu verwalten. Verliere nie wieder eine Quittung mit unserer

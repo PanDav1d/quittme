@@ -65,17 +65,13 @@ export function LoginForm() {
         <div className="w-full max-w-md space-y-8 animate-fade-in-up">
           {/* Header */}
           <div className="text-center">
-            <Link
-              href="/"
-              className="inline-flex items-center space-x-2 mb-8 group"
-            >
-              <div className="h-10 w-10 rounded-lg bg-primary flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <Receipt className="h-5 w-5 text-primary-foreground" />
-              </div>
-              <span className="font-bold text-2xl group-hover:text-primary transition-colors duration-300">
-                QuittMe
-              </span>
-            </Link>
+            <div className="flex items-center space-x-2 group">
+              <img
+              src="/logo.svg"
+              alt="QuittMe Logo"
+              className="rounded-lg flex items-center justify-center p-15"
+              />
+            </div>
 
             <h1 className="text-3xl font-bold mb-2">Händler-Login</h1>
             <p className="text-muted-foreground">
@@ -106,7 +102,6 @@ export function LoginForm() {
                     onChange={(e) =>
                       setFormData({ ...formData, email: e.target.value })
                     }
-                    className="transition-all duration-300 focus:scale-105"
                     required
                   />
                 </div>
@@ -124,7 +119,7 @@ export function LoginForm() {
                       onChange={(e) =>
                         setFormData({ ...formData, password: e.target.value })
                       }
-                      className="pr-10 transition-all duration-300 focus:scale-105"
+                      className="pr-10"
                       required
                     />
                     <button
@@ -188,19 +183,6 @@ export function LoginForm() {
                     Integration starten
                   </Link>
                 </p>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Demo Credentials */}
-          <Card className="border border-green-200 bg-green-50/50 dark:bg-green-950/20 animate-fade-in delay-400">
-            <CardContent className="p-4">
-              <h3 className="font-semibold text-sm mb-2 text-green-700 dark:text-green-300">
-                Demo-Zugang:
-              </h3>
-              <div className="text-xs text-green-600 dark:text-green-400 space-y-1">
-                <p>E-Mail: demo@rewe.de</p>
-                <p>Passwort: demo123</p>
               </div>
             </CardContent>
           </Card>
